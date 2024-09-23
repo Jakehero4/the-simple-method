@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Blank Page</title>
+</head>
+<body>
+    <h1>GitHub Pages - Open in about:blank</h1>
+    <button onclick="openBlankPage()">Open Blank Page</button>
+
+    <script>
+        function openBlankPage() {
+            const newWindow = window.open('about:blank', '_blank');
+            newWindow.document.write(`
+                <html>
+                <head><title>New Page</title></head>
+                <body>
+                    <h1>This is a new page in about:blank</h1>
+                    <p>You can add any custom content here.</p>
+                </body>
+                </html>
+            `);
+            newWindow.document.close();
+        }
+    </script>
+</body>
+</html>
