@@ -1,1 +1,2 @@
-# the-simple-method
+# The Simple Method
+V1.0
